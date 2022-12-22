@@ -45,7 +45,7 @@ body {
 
 main {
 	width: 100%;
-	max-width: 71rem;
+	max-width: 87rem;
 	margin: 0 auto;
 }
 
@@ -74,7 +74,7 @@ main {
 .testimonial-picture-container {
 	background: url(../images/pattern-bg.svg) center / contain no-repeat;
 	margin: 1.5rem;
-	padding: 3rem;
+	padding: clamp(1rem, 8vw, 3rem);
 }
 
 .testimonial-picture {
@@ -208,8 +208,7 @@ main {
 	/* Testimonials */
 
 	.slider {
-		margin-left: 2rem;
-		margin-right: 2rem;
+		margin: 0 clamp(1rem, 5vw, 4.5rem);
 	}
 
 	.testimonial {
@@ -218,15 +217,20 @@ main {
 	}
 
 	.testimonial-picture-container {
-		width: 53%;
+		width: 55%;
 		order: 1;
 		margin: 0;
-		padding: clamp(1rem, 5vw, 3rem);
+		padding: clamp(1rem, 5vw, 4.5rem);
+	}
+
+	.testimonial-picture {
+		width: 100%;
 	}
 
 	.testimonial-blockquote {
 		flex: 1;
-		margin-right: clamp(-8rem, -10%, -3rem);
+		margin-left: 3rem;
+		margin-right: clamp(-9rem, -10%, -3rem);
 	}
 
 	.testimonial-quote {
